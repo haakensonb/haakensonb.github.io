@@ -20,6 +20,9 @@ nav {
         nav ul li a:hover {
           background: #2581Dc;
           color: #ffffff; }
+        nav ul li a:not(:only-child):after {
+          padding-left: 4px;
+          content: ' \2193'; }
       nav ul li ul li {
         min-width: 190px; }
         nav ul li ul li a {
@@ -41,31 +44,6 @@ nav {
   height: 70px;
   width: 70px; }
 
-@media only screen and (max-width: 800px) {
-  .nav-mobile {
-    display: block; }
-
-  .nav-dropdown {
-    position: static; }
-
-  nav {
-    width: 100%;
-    padding: 70px 0 15px; }
-    nav ul {
-      display: none; }
-      nav ul li {
-        float: none; }
-        nav ul li a {
-          padding: 15px;
-          line-height: 20px; }
-        nav ul li ul li a {
-          padding-left: 30px; }
-
-  nav ul {
-    display: none; } }
-@media screen and (min-width: 800px) {
-  .nav-list {
-    display: block !important; } }
 #nav-toggle {
   position: absolute;
   left: 18px;
@@ -99,7 +77,10 @@ nav {
 
 .navigation {
   height: 70px;
-  background: #262626; }
+  background: #262626;
+  position: fixed;
+  width: 100%;
+  top: 0; }
 
 .nav-container {
   max-width: 1000px;
@@ -116,5 +97,47 @@ nav {
   .brand a:visited {
     color: #ffffff;
     text-decoration: none; }
+
+.content {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-top: 70px;
+  padding: 10px; }
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block; }
+
+  .nav-dropdown {
+    position: static; }
+
+  .brand {
+    font-size: 4vw;
+    overflow: hidden;
+    white-space: nowrap; }
+
+  .content {
+    width: 90%; }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px; }
+    nav ul {
+      display: none; }
+      nav ul li {
+        float: none;
+        -webkit-transform: translateZ(0px); }
+        nav ul li a {
+          padding: 15px;
+          line-height: 20px; }
+        nav ul li ul li a {
+          padding-left: 30px; }
+
+  nav ul {
+    display: none; } }
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important; } }
 
 /*# sourceMappingURL=style.css.map */

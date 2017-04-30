@@ -29,10 +29,10 @@ nav {
                     background: $link-hover-color;
                     color: $nav-font-color;
                 }
-                // &:not(:only-child):after {
-                //     padding-left: 4px;
-                //     content: ' ▼';
-                // }
+                &:not(:only-child):after {
+                    padding-left: 4px;
+                    content: ' \2193';
+                }
             }
             ul li {
                 min-width: 190px;
@@ -60,48 +60,6 @@ nav {
     background: $nav-background;
     height: $nav-height;
     width: $nav-height;
-}
-
-@media only screen and (max-width: $breakpoint) {
-    .nav-mobile {
-        display: block;
-    }
-
-    .nav-dropdown {
-        position: static;
-    }
-
-    nav {
-        width: 100%;
-        padding: $nav-height 0 15px;
-        ul {
-            display: none;
-            li {
-                float: none;
-                a {
-                    padding: 15px;
-                    line-height: 20px;
-                }
-                ul li a {
-                    padding-left: 30px;
-                }
-            }
-        }
-    }
-
-    nav {
-        ul {
-            display: none;
-        }
-    }
-}
-
-
-// fix for disappearing navbar bug
-@media screen and (min-width: $breakpoint) {
-  .nav-list {
-    display: block !important;
-  }
 }
 
 // fancy burger
@@ -148,6 +106,9 @@ nav {
 .navigation {
     height: $nav-height;
     background: $nav-background;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .nav-container {
@@ -167,4 +128,65 @@ nav {
         color: $nav-font-color;
         text-decoration: none;
     }
+}
+
+.content {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-top: 70px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: $breakpoint) {
+    .nav-mobile {
+        display: block;
+    }
+
+    .nav-dropdown {
+        position: static;
+    }
+
+    .brand {
+        font-size: 4vw;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    nav {
+        width: 100%;
+        padding: $nav-height 0 15px;
+        ul {
+            display: none;
+            li {
+                float: none;
+                //think this fixed dropdown text blur on chrome
+                -webkit-transform: translateZ(0px);
+                a {
+                    padding: 15px;
+                    line-height: 20px;
+                }
+                ul li a {
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+
+    nav {
+        ul {
+            display: none;
+        }
+    }
+}
+
+// fix for disappearing navbar bug
+@media screen and (min-width: $breakpoint) {
+  .nav-list {
+    display: block !important;
+  }
 }
