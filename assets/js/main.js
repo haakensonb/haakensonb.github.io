@@ -24,7 +24,7 @@ $(document).ready(function(){
         e.preventDefault();
 
         // top position relative to the document
-        var pos = $(id).offset().top - 60;
+        var pos = $(id).offset().top - 80;
 
         // animated top scrolling
         $('body, html').animate({scrollTop: pos});
