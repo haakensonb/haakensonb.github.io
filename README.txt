@@ -1,7 +1,8 @@
 Todo:
 	-Refactor
 	-Add Product Page
-	-Add Contact Page
-        -dropdown email choices
+    -Style contact page button
     -Add written content
+    -Go live
+    -activate forms
 	-Optimize load times
