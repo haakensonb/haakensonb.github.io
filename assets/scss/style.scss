@@ -448,6 +448,26 @@ h1, h3 {
     }
 }
 
+.submit-btn {
+    background-color: #4CAF50;
+    color: $page-background;
+    font-size: 24px;
+    border: solid 1px #4CAF50;
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: none;
+    outline: none;
+
+    &:hover {
+        background-color: #66BB6A;
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: translateY(3px);
+    }
+}
+
 @media only screen and (max-width: $breakpoint) {
     .nav-mobile {
         display: block;
@@ -480,6 +500,28 @@ h1, h3 {
 
     .landing-area-container {
         background-image: radial-gradient(ellipse, $page-background 75%, $primary);
+    }
+
+    //need to refactor so !important isn't needed
+    .form-container {
+        width: 90% !important;
+        height: 80% !important;
+        margin: 15px 0px 0px 0px;
+        form {
+            input {
+                height: 25px !important;
+            }
+
+        textarea {
+                height: 250px !important;
+            }
+        }
+    }
+
+    .dept-choice {
+        p {
+            margin: 5px 0px 5px 0px;
+        }
     }
 
     nav {

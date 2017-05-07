@@ -327,6 +327,21 @@ h1, h3 {
     font-family: "PT Sans", sans-serif;
     font-size: 18px; }
 
+.submit-btn {
+  background-color: #4CAF50;
+  color: #FDFDFD;
+  font-size: 24px;
+  border: solid 1px #4CAF50;
+  border-radius: 5px;
+  padding: 5px;
+  text-shadow: none;
+  outline: none; }
+  .submit-btn:hover {
+    background-color: #66BB6A;
+    cursor: pointer; }
+  .submit-btn:active {
+    transform: translateY(3px); }
+
 @media only screen and (max-width: 800px) {
   .nav-mobile {
     display: block; }
@@ -352,6 +367,18 @@ h1, h3 {
 
   .landing-area-container {
     background-image: radial-gradient(ellipse, #FDFDFD 75%, #2196f3); }
+
+  .form-container {
+    width: 90% !important;
+    height: 80% !important;
+    margin: 15px 0px 0px 0px; }
+    .form-container form input {
+      height: 25px !important; }
+    .form-container form textarea {
+      height: 250px !important; }
+
+  .dept-choice p {
+    margin: 5px 0px 5px 0px; }
 
   nav {
     width: 100%;
