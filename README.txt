@@ -1,7 +1,7 @@
 Todo:
 	-Refactor
 	-Add Product Page
-    -Style contact page button
+    -Validate contact
     -Add written content
     -Go live
     -activate forms
