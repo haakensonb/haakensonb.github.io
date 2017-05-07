@@ -1,4 +1,26 @@
 $(document).ready(function(){
+
+    function pickDept() {
+        let form = $("#form1"),
+            dept = $("#dept");
+
+        console.log(form.attr("action"));
+        //remember to add actual action
+        switch (dept.prop('selectedIndex')) {
+            case 0:
+                form.attr("action", "/cutomer_service");
+                break;
+            case 1:
+                form.attr("action", "/sales");
+                break;
+        }
+        console.log(form.attr("action"));
+    }
+
+    $("#dept").change(function() {
+        pickDept();
+    });
+
     $('.landing-area-container h1').mouseover(function(){
         $('#arrow').addClass('arrow-hover');
     });

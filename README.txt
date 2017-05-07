@@ -1,5 +1,4 @@
 Todo:
-    -mobile form of landing page
 	-Refactor
 	-Add Product Page
 	-Add Contact Page

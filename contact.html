@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Innovative Problem Solutions | Contact</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" type="text/css" >
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand"><a href="index.html">Innovative Problem Solutions</a>
+            </div>
+            <nav>
+                <div class="nav-mobile">
+                    <a href="#" id="nav-toggle"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Products</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#">Product A</a></li>
+                            <li><a href="#">Product B</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+        <div class="form-container">
+            <form id="form1" action="https://formspree.io/your@email.com"
+                  method="POST">
+                <div class="text-center thick-border dept-choice">
+                    <p>Please choose a dept:</p>
+                    <select name="dept" id="dept" size="1">
+                        <option value="dept_Customer_Service">Customer Service</option>
+                        <option value="dept_Sales">Sales</option>
+                    </select>
+                </div>
+                <div>
+                    <input class="thick-border" type="text" name="name" placeholder="Name">
+                </div>
+
+                <div>
+                    <input class="thick-border" type="email" name="_replyto" placeholder="Email">
+                </div>
+
+                <div>
+                    <textarea class="thick-border" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+
+                <div class="text-center">
+                    <button class="" type="submit" value="Send">Submit</button>
+                </div>
+            </form>
+        </div>
+            
+        </div>
+    </section>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
