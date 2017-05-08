@@ -171,13 +171,18 @@ nav {
 }
 
 .content {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     font-size: 18px;
     margin-top: 70px;
     padding: 10px;
     background-color: $page-background;
     border-radius: 10px;
+
+    video {
+        max-width: 100%;
+        max-height: 600px;
+    }
 }
 
 .text-center {
@@ -340,6 +345,11 @@ h1, h3 {
     &:active {
         transform: translateY(3px);
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .mobile-wrap {
@@ -465,6 +475,31 @@ h1, h3 {
 
     &:active {
         transform: translateY(3px);
+    }
+}
+
+.buy-btn {
+    background-color: #F57C00;
+    color: $page-background;
+    font-size: 20px;
+    border: solid 1px #F57C00;
+    border-radius: 5px;
+    padding: 5px;
+    text-shadow: none;
+    outline: none;
+
+    &:hover {
+        background-color: #FB8C00;
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: translateY(3px);
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 }
 

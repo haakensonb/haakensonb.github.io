@@ -110,13 +110,16 @@ nav {
     color: #2581Dc; }
 
 .content {
-  width: 50%;
+  width: 80%;
   margin: 0 auto;
   font-size: 18px;
   margin-top: 70px;
   padding: 10px;
   background-color: #FDFDFD;
   border-radius: 10px; }
+  .content video {
+    max-width: 100%;
+    max-height: 600px; }
 
 .text-center {
   text-align: center; }
@@ -246,6 +249,9 @@ h1, h3 {
     cursor: pointer; }
   .learn-more-btn:active {
     transform: translateY(3px); }
+  .learn-more-btn a {
+    text-decoration: none;
+    color: inherit; }
 
 .mobile-wrap {
   display: none;
@@ -341,6 +347,24 @@ h1, h3 {
     cursor: pointer; }
   .submit-btn:active {
     transform: translateY(3px); }
+
+.buy-btn {
+  background-color: #F57C00;
+  color: #FDFDFD;
+  font-size: 20px;
+  border: solid 1px #F57C00;
+  border-radius: 5px;
+  padding: 5px;
+  text-shadow: none;
+  outline: none; }
+  .buy-btn:hover {
+    background-color: #FB8C00;
+    cursor: pointer; }
+  .buy-btn:active {
+    transform: translateY(3px); }
+  .buy-btn a {
+    text-decoration: none;
+    color: inherit; }
 
 .parsley-custom-error-message {
   display: block;
