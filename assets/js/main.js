@@ -1,10 +1,9 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
     function pickDept() {
         let form = $("#form1"),
             dept = $("#dept");
 
-        console.log(form.attr("action"));
         //remember to add actual action
         switch (dept.prop('selectedIndex')) {
             case 0:
@@ -14,28 +13,27 @@ $(document).ready(function(){
                 form.attr("action", "/sales");
                 break;
         }
-        console.log(form.attr("action"));
     }
 
     $("#dept").change(function() {
         pickDept();
     });
 
-    $('.landing-area-container h1').mouseover(function(){
+    $('.landing-area-container h1').mouseover(function() {
         $('#arrow').addClass('arrow-hover');
     });
-    $('.landing-area-container h1').mouseout(function(){
+    $('.landing-area-container h1').mouseout(function() {
         $('#arrow').removeClass('arrow-hover');
     });
-    $('.landing-area-container h1').on('click', function(){
+    $('.landing-area-container h1').on('click', function() {
         $('#arrow').removeClass('arrow-hover');
     });
 
-    $('#dropdown-link').click(function(event){
+    $('#dropdown-link').click(function(event) {
         event.preventDefault();
     });
 
-    $('#nav-toggle').click(function(event){
+    $('#nav-toggle').click(function(event) {
         event.preventDefault();
     });
 
@@ -57,6 +55,8 @@ $(document).ready(function(){
         var pos = $(id).offset().top - 70;
 
         // animated top scrolling
-        $('body, html').animate({scrollTop: pos});
+        $('body, html').animate({
+            scrollTop: pos
+        });
     });
 });
