@@ -31,6 +31,14 @@ $(document).ready(function(){
         $('#arrow').removeClass('arrow-hover');
     });
 
+    $('#dropdown-link').click(function(event){
+        event.preventDefault();
+    });
+
+    $('#nav-toggle').click(function(event){
+        event.preventDefault();
+    });
+
     // smooth scrolling, implemented with the help of stack overflow
     $(document).on('click', 'a[href^="#"]', function(e) {
         // target element id

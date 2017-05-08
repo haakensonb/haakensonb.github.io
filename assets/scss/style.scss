@@ -183,10 +183,21 @@ nav {
         max-width: 100%;
         max-height: 600px;
     }
+
+    p {
+        padding: 0px 10px 0px 10px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .text-center {
     text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .underline {
@@ -238,7 +249,7 @@ h1, h3 {
     }
 
     div {
-        padding: 5px 0px 5px 0px;
+        padding: 5px 10px 5px 10px;
         background-color: $page-background;
         border-radius: 10px;
     }
@@ -487,6 +498,7 @@ h1, h3 {
     padding: 5px;
     text-shadow: none;
     outline: none;
+    margin-bottom: 5px;
 
     &:hover {
         background-color: #FB8C00;
@@ -536,6 +548,10 @@ h1, h3 {
 
     .content {
         width: 90%;
+
+        p {
+            width: 90%;
+        }
     }
     
     .wrap {
