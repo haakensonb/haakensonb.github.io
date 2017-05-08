@@ -32,7 +32,7 @@
     <section id="contact">
         <div class="contact-container">
         <div class="form-container">
-            <form id="form1" action="https://formspree.io/your@email.com"
+            <form data-parsley-validate id="form1" action="/customer_service"
                   method="POST">
                 <div class="text-center thick-border dept-choice">
                     <p>Please choose a dept:</p>
@@ -42,15 +42,15 @@
                     </select>
                 </div>
                 <div>
-                    <input class="thick-border" type="text" name="name" placeholder="Name">
+                    <input data-parsley-error-message="Please enter your name." data-parsley-required class="thick-border" type="text" name="name" placeholder="Name">
                 </div>
 
                 <div>
-                    <input class="thick-border" type="email" name="_replyto" placeholder="Email">
+                    <input data-parsley-error-message="Please enter a valid email." data-parsley-required class="thick-border" type="email" name="_replyto" placeholder="Email">
                 </div>
 
                 <div>
-                    <textarea class="thick-border" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <textarea data-parsley-error-message="Please enter a message." data-parsley-required class="thick-border" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                 </div>
 
                 <div class="text-center">
@@ -62,6 +62,7 @@
         </div>
     </section>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/parsley.min.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

@@ -342,6 +342,20 @@ h1, h3 {
   .submit-btn:active {
     transform: translateY(3px); }
 
+.parsley-custom-error-message {
+  display: block;
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  background-color: white;
+  padding: 10px;
+  border: solid 5px #F44336; }
+
+.parsley-errors-list {
+  padding: 0; }
+
 @media only screen and (max-width: 800px) {
   .nav-mobile {
     display: block; }
