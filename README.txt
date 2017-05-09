@@ -1,5 +1,7 @@
 Todo:
-	-Refactor
+    -Refactor
     -Go live
     -activate forms
-	-Optimize load times
+    -Optimize load times
+    -align margin product class
+    -make pics bigger
