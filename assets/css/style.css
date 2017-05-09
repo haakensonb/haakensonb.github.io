@@ -201,13 +201,16 @@ h1, h3 {
         max-width: 100%;
         border-radius: 50%; }
 
+.img-scale {
+  transform: scale(1.4); }
+
 .x-across:before,
 .x-across:after {
   position: absolute;
   content: '';
   background: red;
   display: block;
-  width: 60%;
+  width: 90%;
   height: 10px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -215,14 +218,12 @@ h1, h3 {
   right: 0;
   top: 0;
   bottom: 0;
-  margin: auto; }
+  margin: auto;
+  z-index: 900; }
 
 .x-across:after {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg); }
-
-.x-across {
-  overflow: hidden; }
 
 .landing-area-brand {
   text-decoration: none;
