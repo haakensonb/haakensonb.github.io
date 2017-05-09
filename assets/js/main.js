@@ -7,10 +7,10 @@ $(document).ready(function() {
         //remember to add actual action
         switch (dept.prop('selectedIndex')) {
             case 0:
-                form.attr("action", "/cutomer_service");
+                form.attr("action", "https://formspree.io/customerservice@ips-llc.net");
                 break;
             case 1:
-                form.attr("action", "/sales");
+                form.attr("action", "https://formspree.io/sales@ips-llc.net");
                 break;
         }
     }
