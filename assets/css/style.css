@@ -254,7 +254,11 @@ h1, h3 {
   border-radius: 5px;
   padding: 5px;
   text-shadow: none;
-  outline: none; }
+  outline: none;
+  margin-bottom: 5px;
+  font-family: arial;
+  text-decoration: none;
+  display: inline-block; }
   .learn-more-btn:hover {
     background-color: #2196f3;
     cursor: pointer; }
@@ -368,7 +372,9 @@ h1, h3 {
   padding: 5px;
   text-shadow: none;
   outline: none;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  text-decoration: none;
+  display: inline-block; }
   .buy-btn:hover {
     background-color: #FB8C00;
     cursor: pointer; }

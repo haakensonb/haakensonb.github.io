@@ -355,6 +355,10 @@ h1, h3 {
     padding: 5px;
     text-shadow: none;
     outline: none;
+    margin-bottom: 5px;
+    font-family: arial;
+    text-decoration: none;
+    display: inline-block;
 
     &:hover {
         background-color: $primary;
@@ -514,6 +518,8 @@ h1, h3 {
     text-shadow: none;
     outline: none;
     margin-bottom: 5px;
+    text-decoration: none;
+    display: inline-block;
 
     &:hover {
         background-color: $orange-light;
