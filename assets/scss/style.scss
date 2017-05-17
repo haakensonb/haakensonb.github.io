@@ -364,6 +364,16 @@ h1, h3 {
     color: green;
 }
 
+.download-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+        margin: 5px 5px 5px 5px;
+    }
+}
+
 .learn-more-btn {
     background-color: $link-hover-color;
     color: $off-white;

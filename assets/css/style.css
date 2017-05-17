@@ -264,6 +264,14 @@ h1, h3 {
 .arrow-hover {
   color: green; }
 
+.download-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .download-container a {
+    margin: 5px 5px 5px 5px; }
+
 .learn-more-btn {
   background-color: #2581Dc;
   color: #FDFDFD;
