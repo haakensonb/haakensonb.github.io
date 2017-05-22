@@ -201,8 +201,7 @@ h1, h3 {
     position: relative; }
     .wrap .row div img {
       max-height: 100%;
-      max-width: 100%;
-      border-radius: 50%; }
+      max-width: 100%; }
 
 .x-across {
   position: relative; }
