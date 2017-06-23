@@ -117,7 +117,7 @@ nav {
   padding: 10px;
   background-color: #FDFDFD;
   border-radius: 10px; }
-  .content video {
+  .content video, .content img {
     max-width: 100%;
     max-height: 600px; }
   .content p {
