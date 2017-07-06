@@ -1,6 +1,12 @@
+require('../css/normalize.css');
+require('../scss/style.scss');
+
+require('./navbar.js');
+
+
 $(document).ready(function() {
     function pickDept() {
-        let form = $("#form1"),
+        var form = $("#form1"),
             dept = $("#dept");
         switch (dept.prop('selectedIndex')) {
             case 0:
