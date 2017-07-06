@@ -2,6 +2,7 @@ require('../css/normalize.css');
 require('../scss/style.scss');
 
 require('./navbar.js');
+require('./parsley.min.js');
 
 
 $(document).ready(function() {
