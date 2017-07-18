@@ -6,6 +6,11 @@ var ImageminPlugin = require('imagemin-webpack-plugin').default
 
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+var FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+
+
 module.exports = {
     entry: path.resolve(__dirname, 'assets/js/main.js'),
     output: {
@@ -30,7 +35,9 @@ module.exports = {
                     optimizationLevel: 3
                 }
             }
-        )
+        ),
+        new ExtractTextPlugin("styles.css"),
+        new FriendlyErrorsWebpackPlugin(),
     ],
     module: {
         rules: [{
@@ -42,18 +49,30 @@ module.exports = {
                     presets: ['env']
                 }
             }
-        }, {
-            test: /\.scss$/,
-            use: [{
-                loader: "style-loader" // creates style nodes from JS strings
-            }, {
-                loader: "css-loader" // translates CSS into CommonJS
-            }, {
-                loader: "sass-loader" // compiles Sass to CSS
-            }]
-        }, {
+        }, 
+        // {
+        //     test: /\.scss$/,
+        //     use: [{
+        //         loader: "style-loader" // creates style nodes from JS strings
+        //     }, {
+        //         loader: "css-loader" // translates CSS into CommonJS
+        //     }, {
+        //         loader: "sass-loader" // compiles Sass to CSS
+        //     }]
+        // }, 
+        {
             test: /\.css$/,
-            use: ['style-loader', 'css-loader']
+            use: ExtractTextPlugin.extract({
+                fallback: "style-loader",
+                use: "css-loader"
+            })
+        },
+        {
+            test:/\.scss$/,
+            use: ExtractTextPlugin.extract({
+                fallback: 'style-loader',
+                use: ['css-loader', 'sass-loader']
+            })
         }
     ]
 }
